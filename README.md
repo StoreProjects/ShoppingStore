@@ -1,5 +1,6 @@
 <h1 align="center">ShoppingStore</h1>
 <p align="center">Frontend + Backend</p>
+<p align="center">⚛ Aplicación en construcción 🚧</p>
 
 ## 🚀 Instrucciones
 Una vez has clonado el repositorio en tu computador:
@@ -34,4 +35,19 @@ Inicia el servidor frontend:
 npm start
 ```
 ### 💻 Empieza a desarrollar
+Resultado esperado:
 
+![Screenshot](./screenshot.PNG)
+
+## 🐛 Problemas frecuentes
+**¿Tienes un error al instalar las dependencias de NodeJS?** Elimina `package.json`, luego instálalas de nuevo utilizando `npm install`.
+
+## ☝ Tips
+Recuerda iniciar el proceso **MongoDB** utilizando:
+```bash
+mongodb
+```
+
+## 🖐 Desarrolladores
+* [David Saavedra](https://github.com/ProgrammingGeek02)
+* [Marcelo Arias]()
