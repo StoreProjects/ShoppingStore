@@ -37,7 +37,7 @@ npm start
 ### 💻 Empieza a desarrollar
 Resultado esperado:
 
-![Screenshot](./screenshot.PNG)
+![Screenshot](https://github.com/StoreProjects/ShoppingStore/raw/master/screenshot.png)
 
 ## 🐛 Problemas frecuentes
 **¿Tienes un error al instalar las dependencias de NodeJS?** Elimina `package.json`, luego instálalas de nuevo utilizando `npm install`.
