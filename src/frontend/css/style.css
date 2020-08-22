@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+/* 
+  Shopping-Star Stylesheet
+*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Variables */
+:root {
+  --primary-color: #00e676;
+  --light-color: #66ffa6;
+  --dark-color: #00b248;
+  --darker-color: #018f3a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Main Styles */
+
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p,
+a,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+input {
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.font-custom-bungee {
+  font-family: 'Bungee Inline', cursive;
+}
+
+.bg-custom {
+  background-color: var(--dark-color) !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Buttons */
+.btn-success {
+  background-color: var(--dark-color) !important;
+  border: 2px solid var(--dark-color) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-success:hover {
+  background-color: var(--darker-color) !important;
+  border: 2px solid var(--primary-color) !important;
+}
+
+.btn-outline-success {
+  border: 2px solid var(--dark-color) !important;
+}
+
+.btn-outline-success:hover {
+  border: 2px solid var(--dark-color) !important;
+}
+
+/* Navbar */
+
+.title-custom {
+  font-family: 'Bungee Inline', cursive;
+  color: var(--dark-color);
+  transition: 0.3s color;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.title-custom:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+nav {
+  background-color: #fbfbfb;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 1000px;
+}
+
+.nav-top button {
+  background-color: #00b248;
+}
+
+nav span {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.search {
+  width: 800px !important;
+}
+
+.search:focus {
+  border: 1px solid #00e676 !important;
+  box-shadow: 0px 0px 5px 0px #00e676 !important;
+}
+
+.search-button {
+  height: 38px;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.card-product {
+  background-color: white !important;
+  border: 1px solid #f0f0f0;
+  margin: 8px;
+  width: 250px;
+  min-height: 250px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.products-stack {
+  display: flex;
+  justify-content: center;
+}
+
+.product-image-container {
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 1s ease;
+}
+
+.card-product:hover .product-image {
+  transform: scale(1.5);
+}
+
+.card-product h1 {
+  background-color: white;
+}
+
+.card-product:hover {
+  box-shadow: 0px 0px 5px 0px #00e676 !important;
+}
+
+/* Tablet, Mobile */
+@media (max-width: 740px) {
+  nav {
+    background-color: var(--darker-color) !important;
   }
-  to {
-    transform: rotate(360deg);
+  .title-custom,
+  .text-success {
+    color: white !important;
   }
+
+  .register-link,
+  .help-link,
+  .signin-link,
+  .explore-link {
+    display: none;
+  }
+
+  .nav-bottom {
+    display: none !important;
+  }
+}
+
+/* Footer */
+footer {
+  padding-top: 25px;
+  background-color: var(--darker-color);
+  color: white;
+  min-height: 200px;
+}
+
+footer .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
