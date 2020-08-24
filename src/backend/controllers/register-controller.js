@@ -1,14 +1,14 @@
 const registerCtrl = {};
 
 const User = require('../models/User');
-
+/*
 registerCtrl.getUsers = async (req, res) => {
     
     const users = await User.find();
 
     res.json(users);
 }
-
+*/
 registerCtrl.createUser = async (req, res) => {
 
     const { username, email, password, name } = req.body;
@@ -32,5 +32,7 @@ registerCtrl.createUser = async (req, res) => {
     res.json({message: 'User Saved'})
 
 }
+
+
 
 module.exports = registerCtrl;

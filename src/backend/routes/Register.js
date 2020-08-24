@@ -1,10 +1,10 @@
 const { Router } = require('express');
 const router = Router();
 
-const { getUsers, createUser} =require('../controllers/register-controller')
+const { createUser} =require('../controllers/register-controller')
 
 router.route('/')
-    .get(getUsers)
+
     .post(createUser)
 
     //http://localhost:4000/api/users/1

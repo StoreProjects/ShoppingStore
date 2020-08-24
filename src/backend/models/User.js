@@ -11,8 +11,15 @@ const userSchema = new Schema({
 	},
 	email:String, 
 	password:String, 
-    name:String
-    
+    name:String,
+    shoppingCart:{
+
+		name:String,
+		price: Number,
+		type:String,
+		amount: Number
+
+	}
 },{
     timestamps: true // Fecha de creación y fecha de modificación
 });

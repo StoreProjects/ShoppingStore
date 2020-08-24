@@ -6,15 +6,15 @@ const bcrypt = require('bcrypt');
 
 const jwt = require('jsonwebtoken');
 
-const { verificarToken } = require("../middlewares/autenticacion");
 
 
+/*
 loginCtrl.getUsers = verificarToken, async (req, res) => {
     
     const users = await User.find();
 
     res.json(users);
-}
+}*/
 
 loginCtrl.logUser = async (req, res, done) => {
 
