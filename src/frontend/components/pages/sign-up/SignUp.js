@@ -20,7 +20,7 @@ function SignUp(props) {
                   <label for="username" className="form-label">
                     Nombre de usuario
                   </label>
-                  <input type="username" className="form-control" id="username" />
+                  <input type="text" className="form-control" id="username" />
                 </div>
                 <div className="mb-3">
                   <label for="email" className="form-label">
