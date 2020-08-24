@@ -23,6 +23,12 @@ function SignUp(props) {
                   <input type="username" className="form-control" id="username" />
                 </div>
                 <div className="mb-3">
+                  <label for="email" className="form-label">
+                    Correo electrónico
+                  </label>
+                  <input type="email" className="form-control" id="email" />
+                </div>
+                <div className="mb-3">
                   <label for="password" className="form-label">
                     Contraseña
                   </label>
