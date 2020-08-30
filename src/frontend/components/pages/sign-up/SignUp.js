@@ -77,7 +77,7 @@ class SignUp extends React.Component {
               <div className="card-body">
                 <form method="POST" action="http://localhost:4000/api/register">
                   <div className="mb-3">
-                    <label for="name" className="form-label">
+                    <label htmlFor="name" className="form-label">
                       Nombre de completo
                     </label>
                     <input
@@ -91,7 +91,7 @@ class SignUp extends React.Component {
                     />
                   </div>
                   <div className="mb-3">
-                    <label for="username" className="form-label">
+                    <label htmlFor="username" className="form-label">
                       Nombre de usuario
                     </label>
                     <input
@@ -104,7 +104,7 @@ class SignUp extends React.Component {
                     />
                   </div>
                   <div className="mb-3">
-                    <label for="email" className="form-label">
+                    <label htmlFor="email" className="form-label">
                       Correo electrónico
                     </label>
                     <input
@@ -117,7 +117,7 @@ class SignUp extends React.Component {
                     />
                   </div>
                   <div className="mb-3">
-                    <label for="password" className="form-label">
+                    <label htmlFor="password" className="form-label">
                       Contraseña
                     </label>
                     <input
