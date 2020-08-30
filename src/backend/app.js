@@ -28,4 +28,6 @@ app.use('/api/login', require('./routes/Login'));
 
 app.use('/api/product', require('./routes/Products'));
 
+app.use('api/product/:id', require('./routes/Products'));
+
 module.exports = app;
