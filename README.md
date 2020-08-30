@@ -1,4 +1,64 @@
-<h1 align="center">ShoppingStore</h1>
+<h1 align="center"> Project </h1>
+<p align="center">What does - how it does</p>
+
+<!-- Shields -->
+<!-- Languages, frameworks, design -->
+<p align="center">
+  <a href="https://reactjs.org/"><img src="https://img.shields.io/static/v1?label=Builded%20with&message=React&color=blue" /></a>
+  <a href="https://reactjs.org/"><img src="https://img.shields.io/static/v1?label=Builded%20with&message=Framework&color=red" /></a>
+</p>
+
+<img
+  src="./screenshot.png" 
+  title="Screenshot of Project"
+  alt="Screenshot of Project"
+  align="center"
+/>
+
+
+<!-- Stars -->
+<p align="center">
+  ⭐ Hope you liked this project. <b>Give it a star!</b><br/>
+  <img
+    src="https://img.shields.io/github/stars/360macky/spacex-capsules-search.svg?style=flat" 
+    title="Stars in this repository"
+    alt="Stars in this repository"
+    align="center"
+  />
+</p>
+
+## 🚀 Deployment
+💻 Once you have cloned or directly downloaded this repository: Open a terminal, go to the project folder and run:
+
+📦 Install the dependencies
+
+```bash
+```
+
+🎉 **Great! Start using or developing in the PROJECT project.**
+
+😱 Did you have any problems in the process? Open a new Issue, following these instructions.
+
+## 🔨 Builded with
+Project was builded using:
+* [Hello](https://link.com)
+* [Hello](https://link.com)
+* [Hello](https://link.com)
+
+## ✍ Authors
+People who contributed to the development and maintenance of the project.
+
+* **[Name](https://github.com/user)** - @user
+
+See also the list of [contributors](https://github.com/360macky/readme-upgrade-test/graphs/contributors) who participated in the project.
+
+## 📃 License
+Distributed under the MIT License.
+See `LICENSE` for more information.
+º
+
+
+<!-- <h1 align="center">ShoppingStore</h1>
 <p align="center">Frontend + Backend</p>
 <p align="center">⚛ Aplicación en construcción 🚧</p>
 
@@ -50,4 +110,4 @@ mongodb
 
 ## 🖐 Desarrolladores
 * [David Saavedra](https://github.com/ProgrammingGeek02)
-* [Marcelo Arias]()
+* [Marcelo Arias]() -->
