@@ -22,9 +22,7 @@ class SignIn extends React.Component {
           <div className="col-md-4"></div>
           <div className="col-md-4">
             <div className="card mt-4 shadow">
-              <div className="card-header h3 text-center bg-custom">
-                Entrar
-              </div>
+              <div className="card-header h3 text-center bg-custom">Entrar</div>
               <div className="card-body">
                 <form>
                   <div className="mb-3">
