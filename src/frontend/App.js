@@ -8,6 +8,7 @@ import Footer from './components/layouts/Footer';
 import Home from './components/pages/home/Home';
 import SignIn from './components/pages/sign-in/SignIn';
 import SignUp from './components/pages/sign-up/SignUp';
+import Product from './components/pages/get-product/Product';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/product/:id" component={Product} />
       </Switch>
       <Footer />
     </BrowserRouter>
