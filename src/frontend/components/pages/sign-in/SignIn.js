@@ -7,6 +7,13 @@ class SignIn extends React.Component {
       username: '',
       password: '',
     };
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(e) {
+    const { name, value } = e.target;
+    this.setState({
+      [name]: value,
+    });
   }
   render() {
     return (
@@ -28,6 +35,9 @@ class SignIn extends React.Component {
                       type="text"
                       className="form-control"
                       id="username"
+                      name="username"
+                      value={this.state.username}
+                      onChange={this.handleChange}
                       autoFocus
                     />
                   </div>
@@ -39,6 +49,9 @@ class SignIn extends React.Component {
                       type="password"
                       className="form-control"
                       id="password"
+                      name="password"
+                      value={this.state.password}
+                      onChange={this.handleChange}
                     />
                   </div>
                   <button
