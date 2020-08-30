@@ -15,6 +15,9 @@ class SignIn extends React.Component {
       [name]: value,
     });
   }
+  handleSubmit(e) {
+    e.preventDefault();
+  }
   render() {
     return (
       <div className="container mb-5">
@@ -53,7 +56,7 @@ class SignIn extends React.Component {
                     />
                   </div>
                   <button
-                    type="submit"
+                    onClick={this.handleSubmit}
                     className="btn btn-success btn-lg btn-block"
                   >
                     Iniciar sesión
