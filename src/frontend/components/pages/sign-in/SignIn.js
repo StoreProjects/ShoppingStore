@@ -4,10 +4,12 @@ class SignIn extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
+      email: '',
       password: '',
+      isUserLoggedIn: null,
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(e) {
     const { name, value } = e.target;
@@ -17,6 +19,22 @@ class SignIn extends React.Component {
   }
   handleSubmit(e) {
     e.preventDefault();
+    const LOGIN_API = 'http://localhost:4000/api/login';
+    let data = {
+      email: this.state.email,
+      password: this.state.password,
+    };
+    fetch(LOGIN_API, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: { 'Content-Type': 'application/json' },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({
+          isUserLoggedIn: data.ok,
+        });
+      });
   }
   render() {
     return (
@@ -29,15 +47,15 @@ class SignIn extends React.Component {
               <div className="card-body">
                 <form>
                   <div className="mb-3">
-                    <label htmlFor="username" className="form-label">
-                      Nombre de usuario
+                    <label htmlFor="email" className="form-label">
+                      Correo electrónico
                     </label>
                     <input
                       type="text"
                       className="form-control"
-                      id="username"
-                      name="username"
-                      value={this.state.username}
+                      id="email"
+                      name="email"
+                      value={this.state.email}
                       onChange={this.handleChange}
                       autoFocus
                     />
